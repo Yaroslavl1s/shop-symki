@@ -6,11 +6,11 @@ function App() {
     <div className="desktop">
             <div className="div">
                 <header className="header">
-                    <img className="vector" alt="Vector" img="instagram.png" />
+                    <img className="vector" alt="Vector" src="instagram.png" />
                     <div className="search">
                         <div className="overlap-group">
                             <input className="input" placeholder="Search..." type="text" />
-                            <img className="iwwa-search" alt="Iwwa search" img="search.png" />
+                            <img className="iwwa-search" alt="Iwwa search" src="search.png" />
                         </div>
                     </div>
                     <div className="friends-box">FRIENDS BOX</div>
