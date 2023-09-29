@@ -9,6 +9,11 @@ function Contact() {
             </div>
             <div className='service'>
                 <h2>Customer Service</h2>
+                <div className='serv_cont'>
+                    <div>Flahship Store</div>
+                    <div>Opening Hours</div>
+                    <div>Contact Us</div>
+                </div>
             </div>
         </div>
     );

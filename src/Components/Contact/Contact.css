@@ -13,7 +13,7 @@
     font-family: "Lexend Deca-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 3px;
     line-height: normal;
     padding: 10px;
     width: 100%;
@@ -26,8 +26,18 @@
     font-family: "Lexend Deca-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     line-height: normal;
     padding: 10px;
     width: 100%;
+}
+
+.serv_cont{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    line-height: 150%;
 }
