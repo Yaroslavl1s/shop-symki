@@ -1,0 +1,33 @@
+.contact {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.slogan {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 10px;
+    width: 100%;
+}
+
+.service {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 10px;
+    width: 100%;
+}
