@@ -1,0 +1,30 @@
+
+  
+  .desktop .shpo-the-collection {
+    height: 0;
+    left: 645px;
+    position: absolute;
+    top: 0;
+    width: 152px;
+  }
+  
+  .desktop .overlap {
+    border: 1px solid;
+    border-color: #ffffff;
+    height: 40px;
+    position: relative;
+    width: 150px;
+  }
+  
+  .desktop .text-wrapper-9 {
+    
+    border-color: #ffffff;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
