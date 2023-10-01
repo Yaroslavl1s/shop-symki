@@ -1,12 +1,4 @@
-.contact {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-.slogan {
+.contact .slogan {
     text-align: center;
     background-color: #ffffff;
     color: #000;
@@ -16,12 +8,13 @@
     letter-spacing: 3px;
     line-height: normal;
     padding: 10px;
-    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
-.service {
+.contact .service {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #619c39;
     color: #000;
     font-family: "Lexend Deca-Regular", Helvetica;
     font-size: 20px;
@@ -29,15 +22,23 @@
     letter-spacing: 1px;
     line-height: normal;
     padding: 10px;
-    width: 100%;
 }
 
-.serv_cont{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    color: #000;
-    background-color: #ffffff;
-    font-family: "Lexend Deca-Regular", Helvetica;
-    line-height: 150%;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.contact .serv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px 100px;
+    justify-content: space-between;
+}
+
+.contact .serv_cont{
+    height: 60px;
+    background-color:#cda;
 }
