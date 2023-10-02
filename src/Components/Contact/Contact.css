@@ -21,24 +21,73 @@
     font-weight: 400;
     letter-spacing: 1px;
     line-height: normal;
-    padding: 10px;
+    padding: 25px;
 }
 
 * {
-    box-sizing: border-box;
-}
-
-body {
     margin: 0;
+    padding: 0;
 }
-.contact .serv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 70px 100px;
-    justify-content: space-between;
+  
+.contact .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+  }
+  
+.contact .wrap__col {
+    text-align: center;
+    background-color: #619c39;
+    color: #fff;
+    width: 32%;
+    margin-top: 7px;
+}
+  
+.contact .wrap :nth-child(3n+2) {
+    margin: 0% 2%;
+}
+  
+.contact .wrap__col:last-child {
+    margin-right: 0;
 }
 
-.contact .serv_cont{
-    height: 60px;
-    background-color:#cda;
+.contact .Mail {
+    text-align: center;
+    background-color: #619c39;
+    color: #000;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: normal;
+    padding: 60px;
+    text-align: center;
 }
+
+.contact .Inquarise {
+    width: 700px;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+
+form.form {
+    display: flexbox;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  
+  div.form {
+    display: flexbox;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+  }
