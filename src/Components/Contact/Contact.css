@@ -128,7 +128,7 @@
   cursor:pointer;
   transition:all .3s;
 }
-.button:hover {
+.btn_form:hover {
   background:#78788c;
   color:#fff;
 }
