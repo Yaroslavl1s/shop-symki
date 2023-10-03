@@ -27,9 +27,7 @@
     font-weight: 400;
     left: 645px;
     letter-spacing: 0;
-    
     position: absolute;
-    
   }
   
   .desktop .navbar {
@@ -100,16 +98,86 @@
     top: 0;
   }
   
-  
-  
-  
-  
-  
-  
- 
-  
-  
-  
-  
-  
-  
+  .Bhome {
+    display: inline-block;
+    background: #554b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .BshopA {
+    display: inline-block;
+    background: #554b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .BshopA {
+    display: inline-block;
+    background: #554b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .BourS {
+    display: inline-block;
+    background: #554b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .BourC {
+    display: inline-block;
+    background: #554b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .Contact {
+    display: inline-block;
+    background: #554b81;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }

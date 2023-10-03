@@ -9,24 +9,14 @@
   .desktop .div {
     background-color: #ffffff;
     height: 100px;
-    position: relative;
+    position: absolute;
   }
   
   .desktop .header {
     background-color: #554b81;
     height: 115px;
-    left: 0;
-    position: absolute;
-    top: 0;
+    display: flex;
     width: 1440px;
-  }
-  
-  .desktop .vector {
-    height: 17px;
-    left: 1164px;
-    position: absolute;
-    top: 35px;
-    width: 17px;
   }
   
   .desktop .search {
@@ -45,7 +35,7 @@
     border-bottom-width: 1px; 
     border-color: #a01b1b;
     height: 30px;
-    position: relative;
+    position: absolute;
     width: 150px;
   }
   
