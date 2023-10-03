@@ -9,15 +9,13 @@
   .desktop .div {
     background-color: #ffffff;
     height: 100px;
-    position: relative;
+    position: absolute;
   }
   
   .desktop .header {
     background-color: #554b81;
     height: 115px;
-    left: 0;
     position: absolute;
-    top: 0;
     width: 1440px;
   }
   
@@ -45,7 +43,7 @@
     border-bottom-width: 1px; 
     border-color: #a01b1b;
     height: 30px;
-    position: relative;
+    position: absolute;
     width: 150px;
   }
   
