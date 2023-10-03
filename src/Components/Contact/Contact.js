@@ -27,30 +27,13 @@ function Contact() {
                     <div>For questions regarding our products and services you can also contact us by filling out the form below.</div>
                 </div>
             </div>
-            <form action='' method='get' className='form'>
-                <div className='form'>
-                    <label for="name">First Name</label>
-                    <input type="text" name="name" id="name" required />
-                </div>
-                <div className='form'>
-                    <label for="name">Last Name</label>
-                    <input type="text" name="name" id="name" required />
-                </div>
-                <div className='form'>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required />
-                </div>
-                <div className='form'>
-                    <label for="name">Subject</label>
-                    <input type="text, number" name="name" id="name" required />
-                </div>
-                <div className='form'>
-                    <label for="name">Mesage</label>
-                    <input type="text, number" name="name" id="name" required />
-                </div>
-                <div className='form'>
-                    <input type="submit" value="Subscribe!" />
-                </div>
+            <form className="form">
+                <h2 className='from_h2'>CONTACT US</h2>
+                <p className='p_form' type="Name:"><input className='inp_form' placeholder="Write your name here.."></input></p>
+                <p className='p_form' type="Email:"><input className='inp_form' placeholder="Let us know how to contact you back.."></input></p>
+                <p className='p_form' type="Subject:"><input className='inp_form' placeholder="What would you like to tell us.."></input></p>
+                <p className='p_form' type="Message:"><input className='inp_form' placeholder="What would you like to tell us.."></input></p>
+                <button className='btn_form'>Send Message</button>
             </form>
         </div>
     );
