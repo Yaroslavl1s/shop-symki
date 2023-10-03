@@ -15,16 +15,8 @@
   .desktop .header {
     background-color: #554b81;
     height: 115px;
-    position: absolute;
+    display: flex;
     width: 1440px;
-  }
-  
-  .desktop .vector {
-    height: 17px;
-    left: 1164px;
-    position: absolute;
-    top: 35px;
-    width: 17px;
   }
   
   .desktop .search {
