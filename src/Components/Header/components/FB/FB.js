@@ -7,7 +7,7 @@ function FB() {
     return (
     <div className="desktop">
         <div className="div">
-            <header className="header">
+            <header className="headerFB">
             <div className="friends-box">FRIENDS BOX</div>
                     <div className="navbar">
                         <div className="text-wrapper">Home</div>

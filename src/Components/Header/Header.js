@@ -1,6 +1,6 @@
 import './Header.css';
-import instagram from'../../image/instagram.png';
-import search from'../../image/search.png'
+import instagramblack from'../../image/instagramblack.png';
+import searchblack from'../../image/searchblack.png'
 
 
 
@@ -9,11 +9,11 @@ function Header() {
     <div className="desktop">
             <div className="div">
                 <header className="header">
-                    <img className="vector" alt="Vector" src={instagram}/>
+                    <img className="vector" alt="Vector" src={instagramblack}/>
                     <div className="search">
                         <div className="overlap-group">
                             <input className="input" placeholder="Search..." type="text" />
-                            <img className="iwwa-search" alt="Iwwa search" src={search} />
+                            <img className="iwwa-search" alt="Iwwa search" src={searchblack} />
                         </div>
                     </div>
                 </header>

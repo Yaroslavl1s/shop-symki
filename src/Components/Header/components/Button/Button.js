@@ -1,20 +1,20 @@
-import './Slogan.css';
+import './Button.css';
 
 
 
 
-function Slogan() {
+function Button() {
     return(
         <div className="desktop">
-            <div className="div">
+            
                 <div className="shpo-the-collection">
                     <div className="overlap">
                         <button className="text-wrapper-9">Shop the collection</button>
                     </div>
                 </div>
-            </div>
+            
         </div>
     )
 }
 
-export default Slogan;
+export default Button;

@@ -1,10 +1,8 @@
 
-  
   .desktop .shpo-the-collection {
     height: 0;
     left: 645px;
-    position: absolute;
-    top: 0;
+    flex-wrap: wrap;
     width: 152px;
   }
   
@@ -21,10 +19,9 @@
     border-color: #ffffff;
     font-family: "Lexend Deca-Regular", Helvetica;
     font-size: 16px;
-    font-weight: 400;
     left: 0;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
     top: 0;
+    margin-top: 100%;
   }
