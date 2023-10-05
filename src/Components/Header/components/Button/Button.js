@@ -12,7 +12,6 @@ function Button() {
                         <button className="text-wrapper-9">Shop the collection</button>
                     </div>
                 </div>
-            
         </div>
     )
 }
