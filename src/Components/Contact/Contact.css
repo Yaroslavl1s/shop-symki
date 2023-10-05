@@ -74,12 +74,11 @@
     margin-top: 10px;
 }
 
-.form {
+.contact .form {
   width:340px;
   height:440px;
   background:#e6e6e6;
   border-radius:8px;
-  box-shadow:0 0 40px -10px #000;
   margin:calc(50vh - 460px) auto;
   padding:20px 30px;
   max-width:calc(100vw - 40px);
@@ -87,15 +86,16 @@
   font-family:'Montserrat',sans-serif;
   position:relative;
   margin-top: 65px;
+  text-align: left;
 }
-.h2_form {
+.contact .h2_form {
   margin:10px 0;
   padding-bottom:10px;
   width:180px;
-  color:#78788c;
+  color:#4545af;
   border-bottom:3px solid #78788c;
 }
-.inp_form {
+.contact .inp_form {
   width:100%;
   padding:10px;
   box-sizing:border-box;
@@ -105,34 +105,34 @@
   border:0;
   font-family:'Montserrat',sans-serif;
   transition:all .3s;
-  border-bottom:2px solid #bebed2;
+  border-bottom:2px solid #3a3a99;
 }
-.inp_form:focus {
-  border-bottom:2px solid #78788c;
+.contact .inp_form:focus {
+  border-bottom:2px solid #19ac67;
 }
-.p_form:before {
+.contact .p_form:before {
   content:attr(type);
   display:block;
   margin:28px 0 0;
   font-size:14px;
-  color:#5a5a5a;
+  color:#d63a3a;
 }
-.btn_form {
+.contact .btn_form {
   float:right;
   padding:8px 12px;
   margin:8px 0 0;
   font-family:'Montserrat',sans-serif;
-  border:2px solid #78788c;
+  border:2px solid #030374;
   background:0;
-  color:#5a5a6e;
+  color:#93b309;
   cursor:pointer;
   transition:all .3s;
 }
-.btn_form:hover {
-  background:#78788c;
-  color:#fff;
+.contact .btn_form:hover {
+  background:#0b0b9e;
+  color:#690707;
 }
-.div_forma {
+.contact .div_forma {
   content:'Hi';
   position:absolute;
   bottom:-15px;
@@ -145,6 +145,6 @@
   font-size:13px;
   box-shadow:10px 10px 40px -14px #000;
 }
-.span {
+.contact .span {
   margin:0 5px 0 15px;
 }
