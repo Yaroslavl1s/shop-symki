@@ -1,0 +1,150 @@
+.contact {
+  background-color: #03848d;
+}
+
+.contact .slogan {
+    text-align: center;
+    background-color: #03848d;
+    color: #fff;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: normal;
+    padding: 10px;
+    margin-bottom: 35px;
+    
+}
+
+.contact .service {
+    text-align: center;
+    background-color: #619c39;
+    color: #fff;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: normal;
+    padding: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+.contact .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+  }
+  
+.contact .wrap__col {
+    text-align: center;
+    background-color: #619c39;
+    color: #fff;
+    width: 32%;
+    margin-top: 7px;
+}
+  
+.contact .wrap :nth-child(3n+2) {
+    margin: 0% 2%;
+}
+  
+.contact .wrap__col:last-child {
+    margin-right: 0;
+}
+
+.contact .Mail {
+    text-align: center;
+    background-color: #619c39;
+    color: #fff;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: normal;
+    padding: 60px;
+    text-align: center;
+}
+
+.contact .Inquarise {
+    width: 700px;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+
+.contact .form {
+  width:340px;
+  height:440px;
+  background:#e6e6e6;
+  border-radius:8px;
+  margin:calc(50vh - 460px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative;
+  margin-top: 65px;
+  text-align: left;
+}
+.contact .h2_form {
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#4545af;
+  border-bottom:3px solid #78788c;
+}
+.contact .inp_form {
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #3a3a99;
+}
+.contact .inp_form:focus {
+  border-bottom:2px solid #19ac67;
+}
+.contact .p_form:before {
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#d63a3a;
+}
+.contact .btn_form {
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #030374;
+  background:0;
+  color:#93b309;
+  cursor:pointer;
+  transition:all .3s;
+}
+.contact .btn_form:hover {
+  background:#0b0b9e;
+  color:#690707;
+}
+.contact .div_forma {
+  content:'Hi';
+  position:absolute;
+  bottom:-15px;
+  right:-20px;
+  background:#50505a;
+  color:#fff;
+  width:320px;
+  padding:16px 4px 16px 0;
+  border-radius:6px;
+  font-size:13px;
+  box-shadow:10px 10px 40px -14px #000;
+}
+.contact .span {
+  margin:0 5px 0 15px;
+}
