@@ -1,5 +1,6 @@
 import './Header.css';
 import searchblack from'../../image/searchblack.png'
+import instagramblack from'../../image/instagramblack.png'
 
 
 
