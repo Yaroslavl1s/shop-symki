@@ -1,0 +1,22 @@
+.Selars {
+    margin-top: 50%;
+    font-family: "Lexend Deca-Regular" , Helvetica;
+    text-align: center;
+    background-color: blanchedalmond;
+    background-size:cover;
+    
+}
+
+ .box {
+    display: flex;
+    left: 0;
+    margin-left: 30px;
+    padding-top: 10px;
+    flex-flow:wrap;
+}
+
+.symka1 {
+    width: 300px;
+    height: 200px;
+    
+}
