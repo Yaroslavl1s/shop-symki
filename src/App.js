@@ -11,12 +11,11 @@ import Home from './Components/Header/components/Home/Home';
 function App() {
   return (
     <>
-      <Contact/>
-    </>
-   <Header />
-   <Button />
-   <FB />
-   <Home />
+    <Contact/>
+    <Header />
+    <Button />
+    <FB />
+    <Home />
    </>
   );
 }
