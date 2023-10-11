@@ -9,7 +9,7 @@ function Header() {
     <div className="desktop">
             <div className="div">
                 <header className="header">
-                    <img className="vector" alt="Vector" src={instagram} />
+                    <img className="vector" alt="Vector" src={instagramblackтз} />
                     <div className="search">
                         <div className="overlap-group">
                             <input className="input" placeholder="Search..." type="text" />
