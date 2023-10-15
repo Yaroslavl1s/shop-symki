@@ -5,18 +5,58 @@ import Button from './Components/Header/components/Button/Button';
 import FB from './Components/Header/components/FB/FB';
 import Home from './Components/Header/components/Home/Home';
 import Carousel from "react-elastic-carousel";
-import Item from "./Item"
+import Product from './Product.jsx'
 
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 },
-];
+
 
 
 function App() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+  
+  const productData =[
+  {
+    id: 1,
+    imageurl: "https://millzkarta.ru/blog/wp-content/uploads/2022/10/tout.jpg",
+    name: "Cумка",
+    price: "$20.99",
+    description: "Крутая сумка",
+  },
+  {
+    id: 2,
+    imageurl: "https://millzkarta.ru/blog/wp-content/uploads/2022/10/tout.jpg",
+    name: "Cумка 2",
+    price: "$40.99",
+    description: "Крутая сумка 2",
+  }
+
+
+  ]
+  
+  const product = productData.map(item => (
+
+    <Product name={item.name} url={item.imageurl} price={item.price} description={item.description} />
+  ))
+
+
   return (
 
     <>
@@ -26,18 +66,10 @@ function App() {
     <FB />
     <Home />
     <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
-      <div className="App">
-        <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
-        </Carousel>
-      </div>
+    <Carousel responsive={responsive}>
+       {product}
+       
+    </Carousel>;
    </>
    
   );
