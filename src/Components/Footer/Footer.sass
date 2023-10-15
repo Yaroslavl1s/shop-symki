@@ -3,16 +3,16 @@ $text-color: rgba(255,255,255,1.00)
 $logo-color: rgba(255, 255, 255, 0.7)
 $menu-color: rgba(255, 255, 255, 0.8)
 $list-color: rgba(255, 255, 255, 0.6)
+$font-stack: Lexend Deca-Regular, Helvetica
 
 
 .footer 
 	background-color: $back-color
-	padding: 60px 40px
+	padding: 35px 40px 3px
 	color: $text-color
 	margin-bottom: 20px
-	border-bottom-right-radius: 6px
 	border-top-left-radius: 0px
-	border-bottom-left-radius: 6px
+	font: 100% $font-stack
 
 	&__row
 		display: flex
@@ -32,15 +32,21 @@ $list-color: rgba(255, 255, 255, 0.6)
 			color: $logo-color
 	
 	&__nav
+
+		display: flex
 		&__menu, &__inf
 			ul
+				font-size: 100%
 				list-style: none
-				padding: 0px
+				padding: 20px
+				padding-top: 20px
+				margin-left: 105px
 			li
-				padding: 5px 0px
+				padding: 10px 0px
 			a
 				color: $text-color
 				text-transform: uppercase
+				text-decoration: none
 				&:hover
 					color: $menu-color
 					text-decoration: none
@@ -52,12 +58,15 @@ $list-color: rgba(255, 255, 255, 0.6)
 					margin-bottom: 10px
 			&__list
 				ul
+					display: flex
+					flex-wrap: wrap
 					list-style: none
 					padding: 0
 				li
 					padding: 5px 0
 				a
 					color: $text-color
+					text-decoration: none
 					&:hover
 						color: $list-color
 						text-decoration: none
@@ -66,14 +75,18 @@ $list-color: rgba(255, 255, 255, 0.6)
 		ul
 			list-style: none
 			padding: 0px
+			margin-left: 300px
+			margin-top: 10px 
 		h4
 			font-size: 11px
 			text-transform: uppercase
 			letter-spacing: 3px
+			margin-left: 300px
 		li
 			padding: 5px 4px
 		a
 			color: $text-color
+			text-decoration: none
 			&:hover
 				color: $menu-color
 				text-decoration: none
@@ -84,11 +97,15 @@ $list-color: rgba(255, 255, 255, 0.6)
 			text-transform: uppercase
 			letter-spacing: 3px
 			margin-bottom: 10px
+			margin-left: 150px
 		p
 			font-size: 12px
+			margin-left: 150px
 			color: $logo-color
 		&__input
 			display: flex
+			&__control
+				height: 100px
 		&__btn
 			background-color: $back-color
 			color: $text-color
@@ -101,5 +118,30 @@ $list-color: rgba(255, 255, 255, 0.6)
 			display: inline-block
 			padding: 3px
 
+	&__form
+		h4
+			font-size: 11px
+			text-transform: uppercase
+			letter-spacing: 3px
+			margin-bottom: 10px
+			margin-left: 150px
+		&__email
+			&__inp
+			width: 100%
+			padding: 10px
+			box-sizing: border-box
+			background: none
+			outline: none
+			resize: none
+			border: 0
+			font: $font-stack
+			transition: all .3s
+			border-bottom: 2px $menu-color
+			&:focus
+				border-bottom: 2px $back-color
+		&__btn
 
-		
+.designed
+	font: 100% $font-stack
+	text-align: center
+	vertical-align: middle

@@ -11,7 +11,7 @@ function Footer() {
                         <p>© 2023  All rights reserved</p>
                     </div>
                     <div className='footer__nav'>
-                        <h4>Menu —</h4>
+                        <h4></h4>
             	        <div className="footer__nav__menu">
                             <ul className="footer__nav__pages">
                                 <li><a href="#">Home</a></li>
@@ -37,12 +37,13 @@ function Footer() {
                             <li><a href='#'>Instagram</a></li>
                         </ul>
                     </div>
+                    {/*
                     <div className='footer__mail'>
                         <h4>Join Us!</h4>
-                        <p>Email*</p>
+                        <p>Email</p>
                         <p>
                             <div className='footer__input'>
-                                <input type="text" class="form__control" />
+                                <input type="text, email" className="footer__control" />
                                 <span className='footer__bttn'>
                                     <button className='footer__btn' type='button'>
                                         <span className='footer__send'></span>
@@ -51,10 +52,16 @@ function Footer() {
                             </div>
                         </p>
                     </div>
+                    */}
+                    <form className='footer__form'>
+                        <h4 className='footer__form__h4'>Join Us!</h4>
+                        <p className='footer__form__email' type='Email:'><input className='form__inp' placeholder="Email.."></input></p>
+                        <button className='footer__form__btn'>Send Message</button>
+                    </form>
                 </div>
             </footer>
-            <section>
-                <p>Designed by <a href="http://enfoplus.net">Prince J. Sargbah</a></p>
+            <section className='designed'>
+                <p>Designed by <a href="">The Boys</a></p>
             </section>
         </div>
     );
