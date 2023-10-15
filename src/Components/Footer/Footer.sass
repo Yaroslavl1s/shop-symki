@@ -1,7 +1,105 @@
+$back-color: #3c3d41
+$text-color: rgba(255,255,255,1.00)
+$logo-color: rgba(255, 255, 255, 0.7)
+$menu-color: rgba(255, 255, 255, 0.8)
+$list-color: rgba(255, 255, 255, 0.6)
+
+
 .footer 
-    background-color: #3c3d41
-	color: rgba(255,255,255,1.00)
+	background-color: $back-color
+	padding: 60px 40px
+	color: $text-color
 	margin-bottom: 20px
 	border-bottom-right-radius: 6px
 	border-top-left-radius: 0px
 	border-bottom-left-radius: 6px
+
+	&__row
+		display: flex
+		flex-wrap: wrap
+
+	&__logo, &__nav, &__social, &__mail
+		padding: 10px 25px
+
+	&__nav, &__social, &__mail
+		border-color: transparent
+
+	&__logo
+		h2
+			margin: 0px 0px 10px
+		p
+			font-size: 12px
+			color: $logo-color
+	
+	&__nav
+		&__menu, &__inf
+			ul
+				list-style: none
+				padding: 0px
+			li
+				padding: 5px 0px
+			a
+				color: $text-color
+				text-transform: uppercase
+				&:hover
+					color: $menu-color
+					text-decoration: none
+			&__inf
+				h4
+					font-size: 11px
+					text-transform: uppercase
+					letter-spacing: 3px
+					margin-bottom: 10px
+			&__list
+				ul
+					list-style: none
+					padding: 0
+				li
+					padding: 5px 0
+				a
+					color: $text-color
+					&:hover
+						color: $list-color
+						text-decoration: none
+
+	&__social
+		ul
+			list-style: none
+			padding: 0px
+		h4
+			font-size: 11px
+			text-transform: uppercase
+			letter-spacing: 3px
+		li
+			padding: 5px 4px
+		a
+			color: $text-color
+			&:hover
+				color: $menu-color
+				text-decoration: none
+
+	&__mail
+		h4
+			font-size: 11px
+			text-transform: uppercase
+			letter-spacing: 3px
+			margin-bottom: 10px
+		p
+			font-size: 12px
+			color: $logo-color
+		&__input
+			display: flex
+		&__btn
+			background-color: $back-color
+			color: $text-color
+			border: none
+			padding: 10px 15px
+			cursor: pointer
+		&__send
+			border: solid $text-color
+			border-width: 0 3px 3px 0
+			display: inline-block
+			padding: 3px
+
+
+		
