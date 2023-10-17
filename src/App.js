@@ -6,6 +6,7 @@ import FB from './Components/Header/components/FB/FB';
 import Home from './Components/Header/components/Home/Home';
 import Carousel from "react-elastic-carousel";
 import Product from './Product.jsx'
+import 'react-multi-carousel/lib/styles.css';
 
 
 

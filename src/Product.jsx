@@ -1,12 +1,14 @@
 import React from 'react'
+import 'react-multi-carousel/lib/styles.css';
 
-export default function Product() {
+
+export default function Product(props) {
     return (
         <div className="card">
-        <img className="product--image" src="https://millzkarta.ru/blog/wp-content/uploads/2022/10/tout.jpg" alt="symka"></img>
-        <h2>Сумка</h2>
-        <p className="price">$20.99</p>
-        <p>Крутая сумка</p>
+        <img className="product--image" src={props.url} alt="symka"></img>
+        <h2>{props.name}</h2>
+        <p className="price">{props.price}</p>
+        <p>{props.description}</p>
           <button>Add to Cart</button>
 
        </div>
