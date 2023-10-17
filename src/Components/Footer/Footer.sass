@@ -119,27 +119,43 @@ $font-stack: Lexend Deca-Regular, Helvetica
 			padding: 3px
 
 	&__form
-		h4
+		display: grid
+		height: 150px
+		&__title
 			font-size: 11px
 			text-transform: uppercase
 			letter-spacing: 3px
+			margin-top: 10px
 			margin-bottom: 10px
 			margin-left: 150px
-		&__email
-			&__inp
-			width: 100%
+		&__inp
+			width: 250px
+			height: 10px
 			padding: 10px
-			box-sizing: border-box
+			margin-left: 150px
 			background: none
 			outline: none
 			resize: none
-			border: 0
 			font: $font-stack
-			transition: all .3s
-			border-bottom: 2px $menu-color
+			border: 0
+			border-bottom: 2px solid $menu-color
+			background-color: $menu-color
 			&:focus
-				border-bottom: 2px $back-color
+				background-color: $back-color
+				border: 0
+				border-bottom: 2px solid $text-color
 		&__btn
+			width: 107px
+			margin-left: 150px
+			font: 100% $font-stack
+			background-color: $back-color
+			border: none
+			color: $text-color
+			&:hover
+				color: $menu-color
+				border: none
+				font: 100% $font-stack
+				cursor: pointer
 
 .designed
 	font: 100% $font-stack

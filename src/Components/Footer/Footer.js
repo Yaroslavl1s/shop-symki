@@ -54,8 +54,8 @@ function Footer() {
                     </div>
                     */}
                     <form className='footer__form'>
-                        <h4 className='footer__form__h4'>Join Us!</h4>
-                        <p className='footer__form__email' type='Email:'><input className='form__inp' placeholder="Email.."></input></p>
+                        <h4 className='footer__form__title'>Join Us!</h4>
+                        <input className='footer__form__inp' placeholder="Email.."></input>
                         <button className='footer__form__btn'>Send Message</button>
                     </form>
                 </div>
