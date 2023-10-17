@@ -21,6 +21,19 @@ function OurC () {
             <div className="BImg">
                 <img className="BRAND__Img" alt="Img" src={dude}></img>
             </div>
+
+            <div className="TheD">
+                    <h4>THE DESIGNERS</h4>
+                    <p className="TheD__DESIGNERS">I'm a paragraph. Click here to add your own text and edit me. It’s easy. click “Edit Text” or double click me to
+                        add your own content and make changes to the font.
+                        Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+            </div>
+
+            <div className="DImg">
+                <img className="DESIGNERS__Img" alt="Img" src={dude}></img>
+            </div>
+
         </div>
     );
 }
