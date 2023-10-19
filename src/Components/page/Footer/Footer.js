@@ -1,7 +1,7 @@
 import './Footer.sass';
+import { Link} from 'react-router-dom'
 
-
-function Footer() {
+export const Footer =() => {
     return (
         <div>
             <footer className='footer'>
@@ -13,6 +13,13 @@ function Footer() {
                     <div className='footer__nav'>
                         <h4></h4>
             	        <div className="footer__nav__menu">
+                            <Link to="home">
+                                <a href='src/comonents/page/Home'>Home</a>
+                            </Link>
+                            <Link to="contact">
+                                <a href="src/components/page/index">Contact</a>
+                            </Link>
+                            {/*
                             <ul className="footer__nav__pages">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Shop All</a></li>
@@ -20,6 +27,7 @@ function Footer() {
                                 <li><a href="#">Our Craft</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
+                            */}
                         </div>
                         <div className='footer__nav__inf'>
                             <ul className="footer__nav__list">
@@ -66,5 +74,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;

@@ -1,10 +1,10 @@
 import './Header.css';
-import searchblack from'../../image/searchblack.png'
-import instagramblack from'../../image/instagramblack.png'
+import searchblack from'../../../image/searchblack.png'
+import instagramblack from'../../../image/instagramblack.png'
 
 
 
-function Header() {
+export const Header = () => {
   return (
     <div className="desktop">
             <div className="div">
@@ -21,5 +21,3 @@ function Header() {
         </div>
   );
 }
-
-export default Header;

@@ -1,28 +1,10 @@
 import './App.css';
-import Header from './Components/Header/Header';
-import Contact from './Components/Contact/Contact';
-import Button from './Components/Header/components/Button/Button';
-import FB from './Components/Header/components/FB/FB';
-import Home from './Components/Header/components/Home/Home';
-import Footer from './Components/Footer/Footer';
+import React from 'react';
+import { useRoutes } from 'react-router-dom';
+import { routes } from './Routes';
 
 
 
-
-
-
-function App() {
-  return (
-
-    <>
-    <Contact/>
-    <Header />
-    <Button />
-    <FB />
-    <Home />
-    <Footer />
-   </>
-  );
+export default function App() {
+  return useRoutes(routes);
 }
-
-export default App;

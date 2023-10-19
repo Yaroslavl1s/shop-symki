@@ -1,13 +1,13 @@
 import './Home.css'
-import symka1 from '../../../../image/symka1.jpg'
-import symka2 from '../../../../image/symka2.jpg'
-import symka3 from '../../../../image/symka3.jpg'
-import symka4 from '../../../../image/symka4.jpg'
-import symka5 from '../../../../image/symka5.jpg'
-import dude from '../../../../image/dude.png'
+import symka1 from '../../image/symka1.jpg'
+import symka2 from '../../image/symka2.jpg'
+import symka3 from '../../image/symka3.jpg'
+import symka4 from '../../image/symka4.jpg'
+import symka5 from '../../image/symka5.jpg'
+import dude from '../../image/dude.png'
 
 
-function Home () {
+export const Home = () => {
     return (
      <div className="Selars">
           <h4>BEST SELLERS</h4>
@@ -24,5 +24,3 @@ function Home () {
      </div>
     )
 }
-
-export default Home;
