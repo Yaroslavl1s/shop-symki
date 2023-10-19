@@ -14,7 +14,16 @@ export const Footer =() => {
                         <h4></h4>
             	        <div className="footer__nav__menu">
                             <Link to="home">
-                                <a href='src/comonents/page/Home'>Home</a>
+                                <a href='src/components/page/Home'>Home</a>
+                            </Link>
+                            <Link to="shop all">
+                                <a href='src/components/page/Shop'>Shop all</a>
+                            </Link>
+                            <Link to="our story">
+                                <a href='src/components/page/OurS'>Our Story</a>
+                            </Link>
+                            <Link to="our craft">
+                                <a href='src/components/page/OurC'>Our Craft</a>
                             </Link>
                             <Link to="contact">
                                 <a href="src/components/page/index">Contact</a>
