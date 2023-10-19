@@ -1,5 +1,6 @@
 import './OurC.sass';
-import dude from './../../image/dude.png'
+import symka6 from './../../image/symka6.jpg'
+import symka4 from './../../image/symka4.jpg'
 
 
 
@@ -19,7 +20,7 @@ function OurC () {
                     </p>
             </div>
             <div className="BImg">
-                <img className="BRAND__Img" alt="Img" src={dude}></img>
+                <img className="BRAND__Img" alt="Img" src={symka6}></img>
             </div>
 
             <div className="TheD">
@@ -31,7 +32,7 @@ function OurC () {
             </div>
 
             <div className="DImg">
-                <img className="DESIGNERS__Img" alt="Img" src={dude}></img>
+                <img className="DESIGNERS__Img" alt="Img" src={symka4}></img>
             </div>
 
         </div>
