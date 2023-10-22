@@ -1,7 +1,7 @@
 import './Contact.css';
 
 
-function Contact() {
+export const Contact = () => {
     return (
         <div className='contact'>
             <div className='slogan'>
@@ -38,5 +38,3 @@ function Contact() {
         </div>
     );
 }
-
-export default Contact;
