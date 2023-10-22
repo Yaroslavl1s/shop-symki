@@ -4,12 +4,7 @@ import symka4 from '../../image/symka4.jpg'
 
 
 
-
-
-
-
 export const OurC = () => {
-function OurC () {
     return(
         <div>
             <div className="TextS">
@@ -42,6 +37,3 @@ function OurC () {
         </div>
     );
 }
-}
-
-
