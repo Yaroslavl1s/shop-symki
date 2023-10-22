@@ -1,11 +1,10 @@
 import './OurC.sass';
-import symka6 from './../../image/symka6.jpg'
-import symka4 from './../../image/symka4.jpg'
+import symka6 from '../../image/symka6.jpg'
+import symka4 from '../../image/symka4.jpg'
 
 
 
-
-function OurC () {
+export const OurC = () => {
     return(
         <div>
             <div className="TextS">
@@ -38,5 +37,3 @@ function OurC () {
         </div>
     );
 }
-
-export default OurC;
