@@ -4,7 +4,6 @@ import symka4 from '../../image/symka4.jpg'
 
 
 
-
 export const OurC = () => {
     return(
         <div>
