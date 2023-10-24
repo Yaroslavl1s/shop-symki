@@ -13,21 +13,33 @@ export const Footer =() => {
                     <div className='footer__nav'>
                         <h4></h4>
             	        <div className="footer__nav__menu">
-                            <Link to="home">
-                                <a href='src/components/page/Home'>Home</a>
-                            </Link>
-                            <Link to="shop all">
-                                <a href='src/components/page/Shop'>Shop all</a>
-                            </Link>
-                            <Link to="our story">
-                                <a href='src/components/page/OurS'>Our Story</a>
-                            </Link>
-                            <Link to="our craft">
-                                <a href='src/components/page/OurC'>Our Craft</a>
-                            </Link>
-                            <Link to="contact">
-                                <a href="src/components/page/index">Contact</a>
-                            </Link>
+                            <ul className='footer__nav__pages'>
+                                <li>
+                                    <Link to="home">
+                                        <a href='src/components/page/Home'>Home</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="shop all">
+                                        <a href='src/components/page/Shop'>Shop all</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="our story">
+                                        <a href='src/components/page/OurS'>Our Story</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="our craft">
+                                        <a href='src/components/page/OurC'>Our Craft</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="contact">
+                                        <a href="src/components/page/index">Contact</a>
+                                    </Link>
+                                </li>
+                            </ul>
                             {/*
                             <ul className="footer__nav__pages">
                                 <li><a href="#">Home</a></li>
@@ -40,11 +52,31 @@ export const Footer =() => {
                         </div>
                         <div className='footer__nav__inf'>
                             <ul className="footer__nav__list">
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Shipping & Returns</a></li>
-                                <li><a href="#">Store Policy</a></li>
-                                <li><a href="#">Paymant Methods</a></li>
-                                <li><a href="#">Stockists</a></li>
+                                <li>
+                                    <Link to="FAQ">
+                                        <a href='src/components/page/FAQ'>FAQ</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="S_R">
+                                        <a href='src/components/page/S_R'>Shipping & Returns</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="StrPol">
+                                        <a href='src/components/page/StrPol'>Store Policy</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="Payment">
+                                        <a href='src/components/page/Payment'>Payment Methods</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="Stockists">
+                                        <a href="src/components/page/index">Stockists</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
