@@ -3,7 +3,7 @@ import './Button.css';
 
 
 
-function Button() {
+export const Button = () => {
     return(
         <div className="desktop">
                 <div className="shpo-the-collection">
@@ -15,4 +15,3 @@ function Button() {
     )
 }
 
-export default Button;
