@@ -1,23 +1,18 @@
 import './Header.css';
-import searchblack from'../../../image/searchblack.png'
-import instagramblack from'../../../image/instagramblack.png'
+import React from 'react';
+import { FB, LC, Search} from './components';
 
 
-
-export const Header = () => {
+export const Header = ({searchValue, setSearchValue}) => {
   return (
-    <div className="desktop">
-            <div className="div">
-                <header className="header">
-                    <img className="vector" alt="Vector" src={instagramblack} />
-                    <div className="search">
-                        <div className="overlap-group">
-                            <input className="input" placeholder="Search..." type="text" />
-                            <img className="iwwa-search" alt="Iwwa search" src={searchblack} />
-                        </div>
-                    </div>
-                </header>
-            </div>
-        </div>
+    <div>
+      
+    <>
+    <FB/>
+    <LC/>
+    <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
+    </>
+          
+    </div>
   );
 }

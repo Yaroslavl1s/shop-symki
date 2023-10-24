@@ -1,25 +1,31 @@
-import './FB.css';
+import './FB.sass';
+import { Link} from 'react-router-dom'
 
 
 
-
-function FB() {
+export const FB = () => {
     return (
-    <div className="desktop">
-        <div className="div">
-            <header className="headerFB">
-            <div className="friends-box">FRIENDS BOX</div>
-                    <div className="navbar">
-                        <div className="text-wrapper"><button href="#" className="Bhome">Home</button></div>
-                        <div className="text-wrapper-2"><button href="#" className="BshopA">Shop all</button></div>
-                        <div className="text-wrapper-3"><button href="#" className="BourS">Our story</button></div>
-                        <div className="text-wrapper-4"><button href="#" className="BourC">Our craft</button></div>
-                        <div className="text-wrapper-5"><button href="#" className="Contact">Contact</button></div>
-                    </div>
-            </header>
-         </div>
-    </div>
+        <header className="headerFB">
+            <div className="headerFB__friends-box">FRIENDS BOX</div>
+                <div className="headerFB__navbar">
+                    <Link to="home">
+                        <a href='src/components/page/Home'>Home</a>
+                    </Link>
+                    <Link to="shop all">
+                        <a href='src/components/page/Shop'>Shop all</a>
+                    </Link>
+                    <Link to="our story">
+                        <a href='src/components/page/OurS'>Our Story</a>
+                    </Link>
+                    <Link to="our craft">
+                        <a href='src/components/page/OurC'>Our Craft</a>
+                    </Link>
+                    <Link to="contact">
+                        <a href="src/components/page/index">Contact</a>
+                    </Link>
+                </div>
+        </header>
     )
 }
 
-export default FB;
+
