@@ -1,8 +1,17 @@
 import ProductSlider from './ProductSlider';
+import React from 'react';
 
 
 export const Slider = () => {
     return (
-        <ProductSlider/>
+        <div>
+      
+    <>
+    <ProductSlider/>
+    
+
+    </>
+          
+    </div>
     );
 }

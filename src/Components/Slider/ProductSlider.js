@@ -4,12 +4,18 @@ import { FreeMode } from "swiper";
 import 'swiper/css';
 import "swiper/css/free-mode";
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import ProductCard from "./ProductCard";
+
+import img1 from './image/symka';
 
 
 const ProductSlider = () => {
     return (
         <div className="container py-4 px-4 justify-content-center">
+            <>
             <Swiper
             freeMode={true}
             grabCursor={true}
@@ -19,23 +25,17 @@ const ProductSlider = () => {
             spaceBetween={30}
             >
             <SwiperSlide>
-                <h1>Slide 1</h1>
+                <ProductCard data={{imgSrc: img1}}/>
             </SwiperSlide>
 
-            <SwiperSlide>
-                <h1>Slide 2</h1>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <h1>Slide 3</h1>
-            </SwiperSlide>
+            
 
 
 
 
 
             </Swiper>
-
+            </>
         </div>
     );
 };
