@@ -4,6 +4,7 @@ import { OurC } from './Components/OurC/OurC';
 import { Contact } from './Components/Contact/Contact';
 import { OurS } from './Components/OurS/OurS';
 import { Shop } from './Components/Shop/Shop';
+
 export const routes = [
     {
         path: '',
@@ -32,7 +33,8 @@ export const routes = [
             {
                 path: '/contact',
                 element: <Contact />,
-            }
+            },
+            
         ]
 }
 ]
