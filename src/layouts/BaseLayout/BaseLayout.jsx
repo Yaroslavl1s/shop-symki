@@ -3,7 +3,9 @@ import { Outlet } from 'react-router-dom';
 import React from 'react';
 import './BaseLayout.sass';
 import { Header } from '../../Components/page/Header/Header';
+import { ScrollBtn } from '../../Components/page/ScrollBtn/ScrollBtn';
 import { SearchProvider } from '../../hooks/context/SearchContext';
+import Btn from '../../Components/page/Btn/Btn';
 
 export const BaseLayout = () => {
   return (
@@ -11,6 +13,7 @@ export const BaseLayout = () => {
       <SearchProvider>
         <Header />
         <Outlet />
+        <Btn />
         <Footer />
       </SearchProvider>
     </div>

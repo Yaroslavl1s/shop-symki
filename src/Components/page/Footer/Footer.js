@@ -54,27 +54,17 @@ export const Footer =() => {
                             <ul className="footer__nav__list">
                                 <li>
                                     <Link to="FAQ">
-                                        <a href='src/components/page/FAQ'>FAQ</a>
+                                        <a href='src/Components/FAQ'>FAQ</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="S_R">
-                                        <a href='src/components/page/S_R'>Shipping & Returns</a>
+                                        <a href='src/Components/S_R'>Shipping & Returns</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="StrPol">
-                                        <a href='src/components/page/StrPol'>Store Policy</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="Payment">
-                                        <a href='src/components/page/Payment'>Payment Methods</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="Stockists">
-                                        <a href="src/components/page/index">Stockists</a>
+                                        <a href='src/Components/StrPol'>Store Policy & Payment</a>
                                     </Link>
                                 </li>
                             </ul>
