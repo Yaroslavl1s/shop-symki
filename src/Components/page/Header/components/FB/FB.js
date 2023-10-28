@@ -8,8 +8,17 @@ export const FB = () => {
         <header className="headerFB">
             <div className="headerFB__friends-box">FRIENDS BOX</div>
 
-            <img className="instagramblack" alt="Vector" src={instagramblack} />
-            
+            <button><img className="instagramblack" href="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" alt="Vector" src={instagramblack} /></button>
+
+            <div className="LoginCart">
+                <Link>
+                    <a href='src/components/page/LC'>Log in</a>
+                </Link>
+                <Link>
+                    <a href='src/components/page/LC'>Cart</a>
+                </Link>
+            </div>
+
                 <div className="headerFB__navbar">
                     <Link to="home">
                         <a className="headerFB__navbar__Btn"href='src/components/page/Home'>Home</a>
