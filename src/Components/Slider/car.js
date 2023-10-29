@@ -1,95 +1,54 @@
 import './Slider.scss'
-import React  from 'react';
-import ReactDOM from "react-dom"
+import React, {useState} from 'https://cdn.skypack.dev/react';
+import ReactDOM from 'https://cdn.skypack.dev/react-dom';
+import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.dev/react-icons/ti';
 
+const CARDS = 10;
+const MAX_VISIBILITY = 3;
 
+const Card = ({title, content}) => (
+  <div className='card'>
+    <h2>{title}</h2>
+    <p>{content}</p>
+  </div>
+);
 
+export const Carousel = ({children}) => {
+  const [active, setActive] = useState(2);
+  const count = React.Children.count(children);
+  
+  return (
+    <div className='carousel'>
+      {active > 0 && <button className='nav left' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline/></button>}
+      {React.Children.map(children, (child, i) => (
+        <div className='card-container' style={{
+            '--active': i === active ? 1 : 0,
+            '--offset': (active - i) / 3,
+            '--direction': Math.sign(active - i),
+            '--abs-offset': Math.abs(active - i) / 3,
+            'pointer-events': active === i ? 'auto' : 'none',
+            'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
+            'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
+          }}>
+          {child}
+        </div>
+      ))}
+      {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
+    </div>
+  );
+};
 
+const App = () => (
+  <div className='app'>
+    <Carousel>
+      {[...new Array(CARDS)].map((_, i) => (
+        <Card title={'Card ' + (i + 1)} content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+      ))}
+    </Carousel>
+  </div>
+);
 
-var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-
-export default class Car extends React.Component {
-    
-    constructor(props) {
-        super(props)
-        this.state = {
-            items: this.props.items,
-            active: this.props.active,
-            direction: ''
-        }
-        this.rightClick = this.moveRight.bind(this)
-        this.leftClick = this.moveLeft.bind(this)
-    }
-
-    generateItems() {
-        var items = []
-        var level
-        console.log(this.state.active)
-        for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
-            var index = i
-            if (i < 0) {
-                index = this.state.items.length + i
-            } else if (i >= this.state.items.length) {
-                index = i % this.state.items.length
-            }
-            level = this.state.active - i
-            items.push(<Item key={index} id={this.state.items[index]} level={level} />)
-        }
-        return items
-    }
-    
-    moveLeft() {
-        var newActive = this.state.active
-        newActive--
-        this.setState({
-            active: newActive < 0 ? this.state.items.length - 1 : newActive,
-            direction: 'left'
-        })
-    }
-    
-    moveRight() {
-        var newActive = this.state.active
-        this.setState({
-            active: (newActive + 1) % this.state.items.length,
-            direction: 'right'
-        })
-    }
-    
-    render() {
-        return(
-            <div id="carousel" className="noselect">
-                <div className="arrow arrow-left" onClick={this.leftClick}><i className="fi-arrow-left"></i></div>
-                <ReactCSSTransitionGroup 
-                    transitionName={this.state.direction}>
-                    {this.generateItems()}
-                </ReactCSSTransitionGroup>
-                <div className="arrow arrow-right" onClick={this.rightClick}><i className="fi-arrow-right"></i></div>
-            </div>
-        )
-    }
-}
-
-class Item extends React.Component {
-    
-    constructor(props) {
-        super(props)
-        this.state = {
-            level: this.props.level
-        }
-    }
-    
-    render() {
-        const className = 'item level' + this.props.level
-        return(
-            <div className={className}>
-                {this.props.id}
-            </div>
-        )
-    }
-}
-
-var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-ReactDOM.render(<Car items={items} active={0}/>, document.getElementById('app'))
-
-
-
+ReactDOM.render(
+  <App/>,
+  document.body
+);
