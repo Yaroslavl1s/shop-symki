@@ -1,4 +1,5 @@
 import './Home.css'
+//import  { Car }  from './Slider/Car';
 
 
 
@@ -8,8 +9,8 @@ export const Home = () => {
           <h4>BEST SELLERS</h4>
           <>
           
-          <div id="root"></div>
-
+          
+          <Car/>
           
           
           </>
