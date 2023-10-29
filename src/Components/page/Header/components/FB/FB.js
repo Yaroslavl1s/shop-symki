@@ -12,10 +12,10 @@ export const FB = () => {
 
             <div className="LoginCart">
                 <Link>
-                    <a href='src/components/page/LC'>Log in</a>
+                    <a className="Login" href='src/components/page/LC'>Log in</a>
                 </Link>
                 <Link>
-                    <a href='src/components/page/LC'>Cart</a>
+                    <a className="Cart" href='src/components/page/LC'>Cart</a>
                 </Link>
             </div>
 
