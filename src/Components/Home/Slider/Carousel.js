@@ -1,7 +1,8 @@
 import './Slider.scss'
-import React, {useState} from 'https://cdn.skypack.dev/react';
-import ReactDOM from 'https://cdn.skypack.dev/react-dom';
-import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.dev/react-icons/ti';
+import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
+import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
+
 
 const CARDS = 10;
 const MAX_VISIBILITY = 3;
@@ -13,7 +14,7 @@ const Card = ({title, content}) => (
   </div>
 );
 
-export const Carousel = ({children}) => {
+  const Carousel = ({children}) => {
   const [active, setActive] = useState(2);
   const count = React.Children.count(children);
   
@@ -52,3 +53,5 @@ ReactDOM.render(
   <App/>,
   document.body
 );
+
+export default Carousel;

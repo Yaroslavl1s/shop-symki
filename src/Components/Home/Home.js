@@ -1,5 +1,5 @@
 import './Home.css'
-import   { Car }   from './../Slider/Car';
+import Carousel from './Slider/Carousel'
 
 
 
@@ -10,7 +10,7 @@ export const Home = () => {
           <>
           
           
-          <Car/>
+          <Carousel/>
           </>
           
           
