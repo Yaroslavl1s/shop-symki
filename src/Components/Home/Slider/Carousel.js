@@ -49,9 +49,6 @@ const App = () => (
   </div>
 );
 
-ReactDOM.render(
-  <App/>,
-  document.body
-);
+ReactDOM.render(<App/>,document.getElementById("root"));
 
 export default Carousel;
