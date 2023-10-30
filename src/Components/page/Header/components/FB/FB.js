@@ -8,9 +8,10 @@ export const FB = () => {
         <header className="headerFB">
             <div className="headerFB__friends-box">FRIENDS BOX</div>
 
-            <button><img className="instagramblack" href="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" alt="Vector" src={instagramblack} /></button>
+            
 
             <div className="LoginCart">
+            <button className="instagramblack"><img className="instagramblack" href="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" alt="Vector" src={instagramblack} /></button>
                 <Link>
                     <a className="Login" href='src/components/page/LC'>Log in</a>
                 </Link>
