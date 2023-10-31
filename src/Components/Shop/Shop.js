@@ -2,6 +2,9 @@ import './Shop.sass';
 
 export const Shop = () => {
     return (
+        <div>
+            
+
         <div className='TT'>
         
           
@@ -10,6 +13,7 @@ export const Shop = () => {
           
           
           
+
 
         </div>
     )
