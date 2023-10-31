@@ -7,14 +7,14 @@ import { SearchProvider } from '../../hooks/context/SearchContext';
 import { Shop } from '../../Components/Shop/Shop';
 
 export const BaseLayout = () => {
-  // return (
-  //   <div className="App">
-  //     <SearchProvider>
-  //       <Header />
-  //       <Outlet />
-  //       <Footer />
-  //     </SearchProvider>
+  return (
+    <div className="App">
+      <SearchProvider>
+        <Header />
+        <Outlet />
+        <Footer />
+      </SearchProvider>
          <Shop />
-  //   </div>
-  // );
+    </div>
+  );
 };
