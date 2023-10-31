@@ -1,6 +1,7 @@
-import './Shop.css';
+import './Shop.sass';
 
 export const Shop = () => {
+    const items = [{value:"best seller", href: '/main' } , {value:"bags", href: '/bags'} ,{value:"cases", href: '/case' }]
     return (
         <div className='TT'>
             <nav>
@@ -13,6 +14,7 @@ export const Shop = () => {
                 <p>hello</p>
                 <p>hello</p>
             </main>
+            <menushop header=  {"All products"} items={items} />
         </div>
     )
 }
