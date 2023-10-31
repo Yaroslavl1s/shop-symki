@@ -5,10 +5,8 @@ import { Contact } from './Components/Contact/Contact';
 import { OurS } from './Components/OurS/OurS';
 import { Shop } from './Components/Shop/Shop';
 import { FAQ } from './Components/FAQ/FAQ';
-import { Payment } from './Components/Payment/Payment';
 import { S_R } from './Components/S_R/S_R';
 import { StrPol } from './Components/StrPol/StrPol';
-import { Stockists } from './Components/Stockists/Stockists';
 
 export const routes = [
     {
@@ -44,10 +42,6 @@ export const routes = [
                 element: <FAQ />,
             },
             {
-                path: '/Payment',
-                element: <Payment />,
-            },
-            {
                 path: '/S_R',
                 element: <S_R />,
             },
@@ -55,10 +49,6 @@ export const routes = [
                 path: '/StrPol',
                 element: <StrPol />,
             },
-            {
-                path: '/Stockists',
-                element: <Stockists />,
-            }
         ]
 }
 ]
