@@ -1,17 +1,14 @@
-import './LC.css';
+import './LC.sass';
 import { Link} from 'react-router-dom'
-import instagramblack from './../../../../../image/instagramblack.png'
+
 
 
 export const LC = () => {
     return (
-        <div className="desktopLC">
-            <div className="div">
-                <div className="group">
-                <img className="vector" alt="Vector" src={instagramblack} />
-                        <div className="text-wrapper-6">Log in</div>
-                        <div className="text-wrapper-7">Cart (0)</div>
-                </div>
+        <div className="div">
+            <div className="group">
+                <div className="group__text-wrapper-6"></div>
+                <div className="group__text-wrapper-7"></div>
             </div>
         </div>
     )
