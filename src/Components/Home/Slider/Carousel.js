@@ -1,54 +1,30 @@
-import './Slider.scss'
-import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
-import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-const CARDS = 10;
-const MAX_VISIBILITY = 3;
+import './Slider.scss';
 
-const Card = ({title, content}) => (
-  <div className='card'>
-    <h2>{title}</h2>
-    <p>{content}</p>
-  </div>
-);
+// import required modules
+import { Pagination } from 'swiper/modules';
 
-  const Carousel = ({children}) => {
-  const [active, setActive] = useState(2);
-  const count = React.Children.count(children);
-  
+export default function App() {
   return (
-    <div className='carousel'>
-      {active > 0 && <button className='nav left' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline/></button>}
-      {React.Children.map(children, (child, i) => (
-        <div className='card-container' style={{
-            '--active': i === active ? 1 : 0,
-            '--offset': (active - i) / 3,
-            '--direction': Math.sign(active - i),
-            '--abs-offset': Math.abs(active - i) / 3,
-            'pointer-events': active === i ? 'auto' : 'none',
-            'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
-            'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
-          }}>
-          {child}
-        </div>
-      ))}
-      {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
-    </div>
+    <>
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
   );
-};
-
-const App = () => (
-  <div className='app'>
-    <Carousel>
-      {[...new Array(CARDS)].map((_, i) => (
-        <Card title={'Card ' + (i + 1)} content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
-      ))}
-    </Carousel>
-  </div>
-);
-
-ReactDOM.render(<App/>,document.getElementById("root"));
-
-export default Carousel;
+}
