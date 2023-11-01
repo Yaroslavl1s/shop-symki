@@ -1,37 +1,31 @@
-*
-    padding: 0
-    margin: 0
-    box-sizing: border-box
-
+* 
+  padding: 0
+  margin: 0
+  box-sizing: border-box
 
 nav 
-    height: 50px
-    width: 100%
-    background-color: red
-    position: fixed
-    z-index: 50
-    display: flex
-    align-items: center
-
+  height: 50px
+  width: 100%
+  background-color: red
+  position: fixed
+  z-index: 50
+  display: flex
+  align-items: center
 
 main
-    padding: 50px
-
+  padding: 50px
 
 p 
-    margin: 20px
-
-
+  margin: 20px
 
 .burger-btn 
-    width: 20px
-    height: 20px
-    margin-left: 20px
-    position: relative
-    cursor: pointer
+  width: 20px
+  height: 20px
+  margin-left: 20px
+  position: relative
+  cursor: pointer
 
-
-.burger-btn::before 
+  &::before 
     content: ''
     position: absolute
     top: 0
@@ -39,8 +33,7 @@ p
     background-color: blue
     height: 2px
 
-
-.burger-btn span 
+  span 
     content: ''
     position: absolute
     top: 9px
@@ -48,11 +41,11 @@ p
     background-color: blue
     height: 2px
 
-
-.burger-btn::after 
+  &::after 
     content: ''
     position: absolute
     bottom: 0
     width: 20px
     background-color: blue
     height: 2px
+

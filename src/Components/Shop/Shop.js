@@ -10,11 +10,11 @@ export const Shop = () => {
                 </div>
             </nav>
             <main>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
+                <p>hello try7urtgyhj dty rtuyj fu fu </p>
+                <p>he tuyjrftu7j  tujllo</p>
+                <p>helt uyrftyu jlo</p>
             </main>
-            <menushop header=  {"All products"} items={items} />
+            <menushop header={"All products"} items={items} />
         </div>
     )
 }

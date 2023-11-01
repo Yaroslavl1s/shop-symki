@@ -11,7 +11,7 @@ export const BaseLayout = () => {
     <div className="App">
       <SearchProvider>
         <Header />
-        {/* <Outlet /> */}
+        <Outlet />
         <Footer />
       </SearchProvider>
          <Shop />
