@@ -22,15 +22,15 @@ export const routes = [
                 element: <Home />,
             },
             {
-                path: '/shop all',
+                path: '/shop-all',
                 element: <Shop />,
             },
             {
-                path: '/our story',
+                path: '/our-story',
                 element: <OurS />
             },
             {
-                path: '/our craft',
+                path: '/our-craft',
                 element: <OurC/>
             },
             {
