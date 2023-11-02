@@ -1,6 +1,9 @@
+$font-stack: Lexend Deca-Regular, Helvetica
+$menu-color: rgba(255, 255, 255, 0.8)
+$back-color: #3c3d41
+$text-color: rgba(255,255,255,1.00)
+    
 .search 
-    height: 30px
-    left: 30px
     position: absolute
     top: 25px
     width: 149px
@@ -38,3 +41,28 @@
     position: absolute
     top: 9px
     
+    &__window
+        
+    &__input 
+        width: 250px
+        height: 10px
+        padding: 10px
+        padding-left: 19px
+        background: none
+        outline: none
+        resize: none
+        font: $font-stack
+        border: 0
+        border-bottom: 2px solid $menu-color
+        background-color: $menu-color
+        &:focus
+            background-color: $back-color
+            border: 0
+            border-bottom: 2px solid $text-color
+    &__img
+        height: 20px
+        left: -1px
+        position: absolute
+        top: 4px
+        width: 20px
+
