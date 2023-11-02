@@ -24,13 +24,13 @@ export const FB = () => {
                     <Link to="home">
                         <a className="headerFB__navbar__Btn"href='src/components/page/Home'>Home</a>
                     </Link>
-                    <Link to="shop all">
+                    <Link to="shop-all">
                         <a className="headerFB__navbar__Btn"href='src/components/page/Shop'>Shop all</a>
                     </Link>
-                    <Link to="our story">
+                    <Link to="our-story">
                         <a className="headerFB__navbar__Btn"href='src/components/page/OurS'>Our Story</a>
                     </Link>
-                    <Link to="our craft">
+                    <Link to="our-craft">
                         <a className="headerFB__navbar__Btn"href='src/components/page/OurC'>Our Craft</a>
                     </Link>
                     <Link to="contact">
