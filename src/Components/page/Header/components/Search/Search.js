@@ -1,5 +1,5 @@
 import './Search.sass';
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import searchblack from'../../../../../image/searchblack.png'
 
 export const Search = () => {
