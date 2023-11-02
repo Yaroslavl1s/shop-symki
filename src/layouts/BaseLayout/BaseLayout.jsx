@@ -4,7 +4,6 @@ import React from 'react';
 import './BaseLayout.sass';
 import { Header } from '../../Components/page/Header/Header';
 import { SearchProvider } from '../../hooks/context/SearchContext';
-import { Shop } from '../../Components/Shop/Shop';
 
 export const BaseLayout = () => {
   return (
@@ -14,7 +13,6 @@ export const BaseLayout = () => {
         <Outlet />
         <Footer />
       </SearchProvider>
-         <Shop />
     </div>
   );
 };
