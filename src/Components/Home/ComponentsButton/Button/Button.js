@@ -1,16 +1,12 @@
-import './Button.css';
+import './Button.sass';
 
 
 
 
 export const Button = () => {
     return(
-        <div className="desktop">
-                <div className="shpo-the-collection">
-                    <div className="overlap">
-                        <button className="text-wrapper-9">Shop the collection</button>
-                    </div>
-                </div>
+        <div className="shpo-the-collection">
+            <button className="shpo-the-collection__text-wrapper-9">Shop the collection</button>
         </div>
     )
 }
