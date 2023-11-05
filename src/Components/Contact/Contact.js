@@ -24,7 +24,7 @@ export const Contact = () => {
             <div className='Mail'>
                 <h2>Inquiries</h2>
                 <div className='Inquarise'>
-                    <div>For questions regarding our products and services you can also contact us by filling out the form below.</div>
+                    <p>For questions regarding our products and services you can also contact us by filling out the form below.</p>
                 </div>
             <form className="form">
                 <h2 className='from_h2'>CONTACT US</h2>

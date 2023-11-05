@@ -20,17 +20,17 @@ export const Footer =() => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="shop all">
+                                    <Link to="shop-all">
                                         <a href='src/components/page/Shop'>Shop all</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="our story">
+                                    <Link to="our-story">
                                         <a href='src/components/page/OurS'>Our Story</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="our craft">
+                                    <Link to="our-craft">
                                         <a href='src/components/page/OurC'>Our Craft</a>
                                     </Link>
                                 </li>
@@ -73,7 +73,11 @@ export const Footer =() => {
                     <div className='footer__social'>
                         <h4>Follow Us</h4>
                         <ul>
-                            <li><a href='#'>Instagram</a></li>
+                            <li>
+                                <Link to="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" target="_blank">
+                                    <a>Instagram</a>
+                                </Link>
+                            </li> 
                         </ul>
                     </div>
                     {/*

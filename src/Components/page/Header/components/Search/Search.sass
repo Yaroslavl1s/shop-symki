@@ -1,39 +1,30 @@
-.search 
-    height: 30px
-    left: 30px
+.search
     position: absolute
-    top: 25px
-    width: 149px
-    border-color: #554b81
-    border-radius: solid
-
-.iwwa-search 
-    height: 20px
-    left: -1px
-    position: absolute
-    top: 4px
-    width: 20px
-  
-.overlap-group 
-    background-color: #554b81
-    border-bottom-style: solid
-    border-bottom-width: 1px
-    border-color: #a01b1b
-    height: 30px
-    position: absolute
-    width: 150px
-
-.input 
-    background: transparent
-    border: #554b81
-    color: #ffffff
-    font-family: "Lexend Deca-Regular", Helvetica
-    font-size: 10px
-    font-weight: 400
-    left: 25px
-    letter-spacing: 0
-    line-height: normal
-    padding: 0
-    position: absolute
-    top: 9px
+    display: flex
+    flex-direction: row-reverse
+    justify-content: start
+    width: 250px
+    border: 0
+    padding-left: 45px
+    top: 50px 
+    z-index: 2
+    &__input
+        position: relative
+        width: 250px
+        height: 25px
+        background: none
+        outline: none
+        resize: none
+        font: Lexend Deca-Regular, Helvetica
+        border: 0
+        border-bottom: 2px solid #ffffff
+        background-color: #a5a4a4
+        &:focus
+            position: relative
+            border: 0
+            background-color: #af7777
+            border-bottom: 2px solid #e04e4e
+    &__img
+        position: relative
+        padding-right: 3px
     
