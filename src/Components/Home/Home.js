@@ -1,5 +1,6 @@
-import './Home.css'
+import './Home.scss'
 import Carousel from './Slider/Carousel'
+
 
 
 
@@ -8,8 +9,6 @@ export const Home = () => {
      <div className="Selars">
           
           <>
-          
-          
           <Carousel/>
           </>
           
