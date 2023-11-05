@@ -23,7 +23,15 @@ export default function App() {
   return (
     
     <>
-      <Swiper effect={'fade'} spaceBetween={50} navigation={true} modules={[Navigation]} slidesPerView={3}className="mySwiper">
+      <Swiper 
+      effect={'fade'} 
+      spaceBetween={50} 
+      navigation={true} 
+      modules={[Navigation]} 
+      slidesPerView={3}
+      className="mySwiper"
+      
+      >
         
         <SwiperSlide><img src={symka2} alt="Symka" /></SwiperSlide>
         <SwiperSlide><img src={symka3} alt="Symka" /></SwiperSlide>
