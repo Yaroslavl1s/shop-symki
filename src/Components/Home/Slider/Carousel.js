@@ -21,8 +21,10 @@ import { Navigation } from 'swiper/modules';
 
 export default function App() {
   return (
+    
     <>
-      <Swiper navigation={true} modules={[Navigation]} slidesPerView={3}className="mySwiper">
+      <Swiper spaceBetween={50} navigation={true} modules={[Navigation]} slidesPerView={3}className="mySwiper">
+        
         <SwiperSlide><img src={symka2} alt="Symka" /></SwiperSlide>
         <SwiperSlide><img src={symka3} alt="Symka" /></SwiperSlide>
         <SwiperSlide><img src={symka4} alt="Symka" /></SwiperSlide>
