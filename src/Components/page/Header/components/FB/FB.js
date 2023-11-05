@@ -1,5 +1,5 @@
 import './FB.sass';
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import instagramblack from './../../../../../image/instagramblack.png'
 
 

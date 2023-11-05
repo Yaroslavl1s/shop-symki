@@ -1,12 +1,14 @@
 import './Button.sass';
-
+import { Link } from 'react-router-dom'
 
 
 
 export const Button = () => {
     return(
         <div className="shpo-the-collection">
-            <button className="shpo-the-collection__text-wrapper-9">Shop the collection</button>
+            <Link to="shop-all">
+                <a className="ButtonShop"href='src/components/page/Shop'>Shop the collection</a>
+            </Link>
         </div>
     )
 }
