@@ -7,21 +7,11 @@ import { Button } from './ComponentsButton/Button/Button'
 export const Home = () => {
     return (
      <div className="Selars">
-          
-          <>
-          
-          <Button/>
-          <Carousel/>
-          </>
-          
-          
-        
-          
+        <>
+        <Button/>
+        <Carousel/>
+        </>
      </div>
-    
-    
-
-     
     )
 }
 
