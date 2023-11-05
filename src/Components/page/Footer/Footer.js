@@ -73,7 +73,11 @@ export const Footer =() => {
                     <div className='footer__social'>
                         <h4>Follow Us</h4>
                         <ul>
-                            <li><a href='#'>Instagram</a></li>
+                            <li>
+                                <Link to="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" target="_blank">
+                                    <a>Instagram</a>
+                                </Link>
+                            </li> 
                         </ul>
                     </div>
                     {/*
