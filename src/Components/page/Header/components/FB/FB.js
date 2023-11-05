@@ -11,7 +11,9 @@ export const FB = () => {
             
 
             <div className="LoginCart">
-            <button className="instagramblack"><img className="instagramblack" href="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" alt="Vector" src={instagramblack} /></button>
+                <Link to="https://instagram.com/_friends_box?igshid=YTQwZjQ0NmI0OA==" target="_blank">
+                    <button className="instagramblack"><img className="instagramblack" alt="Vector" src={instagramblack} /></button>
+                </Link>
                 <Link>
                     <a className="Login" href='src/components/page/LC'>Log in</a>
                 </Link>

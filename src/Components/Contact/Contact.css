@@ -69,9 +69,11 @@
 }
 
 .contact .Inquarise {
-    width: 700px;
-    margin-left: 550px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 55%;
+    padding-left: 550px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .contact .form {
