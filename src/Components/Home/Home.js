@@ -1,6 +1,7 @@
 import './Home.scss'
 import Carousel from './Slider/Carousel'
-import { Button } from './ComponentsButton/Button/Button'
+
+import { Link } from 'react-router-dom'
 
 
 
@@ -9,15 +10,12 @@ export const Home = () => {
     return (
      <div className="Selars">
           <h1>Most Popular</h1>
-          
           <>
-          <Button/>
           <Carousel/>
           </>
-          
-          
-          <button class="button">Shop All</button>
-    
+          <Link to="/shop-all">
+                <a className="Button"href='src/components/Home/ComponentsButton/Shop'>Shop the collection</a>
+            </Link>
      </div>
     )
 }
