@@ -7,37 +7,60 @@ import symka4 from './../../../image/symka4.jpg';
 import symka5 from './../../../image/symka5.jpg';
 import symka6 from './../../../image/symka6.jpg';
 
+import { Link } from 'react-router-dom';
+
+
+
 
 
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
 import './Slider.scss';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Navigation, EffectFade } from 'swiper/modules';
 
 export default function App() {
   return (
     
     <>
       <Swiper 
-      effect={'fade'} 
+      modules={[Navigation, EffectFade]}
+      
       spaceBetween={50} 
       navigation={true} 
-      modules={[Navigation]} 
+      
       slidesPerView={3}
       className="mySwiper"
+      loop={true}
       
       >
         
-        <SwiperSlide><img src={symka2} alt="Symka" /></SwiperSlide>
-        <SwiperSlide><img src={symka3} alt="Symka" /></SwiperSlide>
-        <SwiperSlide><img src={symka4} alt="Symka" /></SwiperSlide>
-        <SwiperSlide><img src={symka5} alt="Symka" /></SwiperSlide>
-        <SwiperSlide><img src={symka6} alt="Symka" /></SwiperSlide>
+        <SwiperSlide><Link to="/shop-all" target="_self" rel="noreferrer">
+        <img src={symka2} alt="Symka"></img>
+      </Link></SwiperSlide>
+
+      <SwiperSlide><Link to="/shop-all" target="_self" rel="noreferrer">
+        <img src={symka3} alt="Symka"></img>
+      </Link></SwiperSlide>
+
+      <SwiperSlide><Link to="/shop-all" target="_self" rel="noreferrer">
+        <img src={symka4} alt="Symka"></img>
+      </Link></SwiperSlide>
+
+      <SwiperSlide><Link to="/shop-all" target="_self" rel="noreferrer">
+        <img src={symka5} alt="Symka"></img>
+      </Link></SwiperSlide>
+
+      <SwiperSlide><Link to="/shop-all" target="_self" rel="noreferrer">
+        <img src={symka6} alt="Symka"></img>
+      </Link></SwiperSlide>
+       
+        
         
       </Swiper>
     </>
