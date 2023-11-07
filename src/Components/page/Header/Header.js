@@ -1,6 +1,6 @@
 import './Header.css';
 import React from 'react';
-import { FB, LC, Search} from './components';
+import { FB, Search} from './components';
 
 
 export const Header = ({searchValue, setSearchValue}) => {
@@ -9,7 +9,6 @@ export const Header = ({searchValue, setSearchValue}) => {
       
     <>
     <FB/>
-    <LC/>
     <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
     </>
           

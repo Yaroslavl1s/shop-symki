@@ -1,16 +1,14 @@
-import './Button.css';
-
+import './Button.sass';
+import { Link } from 'react-router-dom'
 
 
 
 export const Button = () => {
     return(
-        <div className="desktop">
-                <div className="shpo-the-collection">
-                    <div className="overlap">
-                        <button className="text-wrapper-9">Shop the collection</button>
-                    </div>
-                </div>
+        <div className="shpo-the-collection">
+            <Link to="/shop-all">
+                <a className="ButtonShop"href='src/components/Home/ComponentsButton/Shop'>Shop the collection</a>
+            </Link>
         </div>
     )
 }
