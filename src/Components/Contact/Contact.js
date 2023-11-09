@@ -20,7 +20,7 @@ export const Contact = () => {
 
         axios.post('/submit-form', formData)
             .then(response => {
-                console.log(response.data); // Можете обработать ответ от сервера
+                console.log(response.data);
             })
             .catch(error => {
                 console.error('Ошибка при отправке данных', error);
