@@ -98,7 +98,7 @@ export const Footer =() => {
                     */}
                     <form className='footer__form'>
                         <h4 className='footer__form__title'>Join Us!</h4>
-                        <input className='footer__form__inp' placeholder="Email.."></input>
+                        <input type='email' className='footer__form__inp' placeholder="Email.."></input>
                         <button className='footer__form__btn'>Send Message</button>
                     </form>
                 </div>
