@@ -31,7 +31,7 @@ export default function App() {
       <Swiper 
       modules={[Navigation, EffectFade]}
       
-      spaceBetween={50} 
+      spaceBetween={10} 
       navigation={true} 
       
       slidesPerView={3}
