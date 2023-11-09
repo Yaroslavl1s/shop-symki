@@ -25,11 +25,8 @@ export const FB = () => {
                     <Link to="shop-all">
                         <a className="headerFB__navbar__Btn"href='src/components/page/Shop'>Shop all</a>
                     </Link>
-                    <Link to="our-story">
-                        <a className="headerFB__navbar__Btn"href='src/components/page/OurS'>Our Story</a>
-                    </Link>
-                    <Link to="our-craft">
-                        <a className="headerFB__navbar__Btn"href='src/components/page/OurC'>Our Craft</a>
+                    <Link to="AboutUS">
+                        <a className="headerFB__navbar__Btn"href='src/components/page/AboutUS'>About Us</a>
                     </Link>
                     <Link to="contact">
                         <a className="headerFB__navbar__Btn"href="src/components/page/index">Contact</a>
