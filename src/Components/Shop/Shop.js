@@ -1,10 +1,11 @@
 import './Shop.sass';
 import { Link} from 'react-router-dom'
+import sumka5 from  './../../image/symka5.jpg'
 
 export const Shop = () => {
     return ( 
         <a href="https://www.example.com">
-        <img src="image/sumka5.jpg" alt="Description" />
+        <img src={sumka5}alt="sumka" />
         
 
         <div className='menu'>
@@ -23,25 +24,7 @@ export const Shop = () => {
 
      <li>
      <Link to="home">
-         <a href='src/components/page/Home'>Best Sellers</a>
-     </Link>
-     </li>
-
-     <li>
-     <Link to="home">
-         <a href='src/components/page/Home'>Leather Belts</a>
-     </Link>
-     </li>
-
-     <li>
-     <Link to="home">
-         <a href='src/components/page/Home'>Mini Leather Goods</a>
-     </Link>
-     </li>
-
-     <li>
-     <Link to="home">
-         <a href='src/components/page/Home'>Phone Cases</a>
+         <a href='src/components/page/Home'>Basket</a>
      </Link>
      </li>
      </ul>
