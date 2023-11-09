@@ -1,39 +1,83 @@
-.search 
-    height: 30px
-    left: 30px
+/* .search
     position: absolute
-    top: 25px
-    width: 149px
-    border-color: #554b81
-    border-radius: solid
-
-.iwwa-search 
-    height: 20px
-    left: -1px
-    position: absolute
-    top: 4px
-    width: 20px
-  
-.overlap-group 
-    background-color: #554b81
-    border-bottom-style: solid
-    border-bottom-width: 1px
-    border-color: #a01b1b
-    height: 30px
-    position: absolute
-    width: 150px
-
-.input 
-    background: transparent
-    border: #554b81
-    color: #ffffff
-    font-family: "Lexend Deca-Regular", Helvetica
-    font-size: 10px
-    font-weight: 400
-    left: 25px
-    letter-spacing: 0
-    line-height: normal
-    padding: 0
-    position: absolute
-    top: 9px
+    display: flex
+    flex-direction: row-reverse
+    justify-content: start
+    width: 250px
+    border: 0
+    padding-left: 45px
+    top: 50px 
+    &__input
+        width: 250px
+        height: 35px
+        background: transparent
+        outline: none
+        resize: none
+        font: Lexend Deca-Regular, Helvetica
+        border: 0
+        border-bottom: 2px solid #ffffff
+        background-color: #a5a4a4
+        &:focus
+            border: 0
+            background-color: #af7777
+            border-bottom: 2px solid #e04e4e
+            color: #34b47f
+        &:placeholder
+            color: #34b47f
+    &__btn
+        outline: none
+        background: transparent
+        border: none
+        height: 42px
+        width: 42px
+        position: absolute
+        top: 0
+        right: -55
+        cursor: pointer
+        &::before
+            font-family: FontAwesome
+            font-size: 16px
+            color: #F9F0DA
+    &__img
+        padding-right: 3px */
     
+
+
+.search
+    position: absolute
+    width: 250px
+    left: 20px
+    top: 50px
+    font: Lexend Deca-Regular, Helvetica
+    &__input, &__btn
+        outline: none
+        background: transparent
+    &__input 
+        font: Lexend Deca-Regular, Helvetica
+        width: 100%
+        height: 35px
+        padding-left: 15px
+        resize: none
+        border: 0
+        border-bottom: 2px solid #F9F0DA
+        background-color: #A38E65
+        &:focus 
+            border: 0
+            border-bottom: 2px solid #4E4637
+            background-color: #FFD367
+            color: #F9F0DA
+        &:placeholder
+            color: #F9F0DA
+    &__btn
+        border: none
+        height: 30px
+        width: 30px
+        position: absolute
+        top: 0
+        right: 0
+        cursor: pointer
+        content: url('../../../../../image/searchblack.png')
+        &:before
+            content: url('../../../../../image/searchblack.png')
+
+

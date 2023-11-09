@@ -54,5 +54,6 @@
     "less": "^4.2.0",
     "less-loader": "^8.1.1",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
