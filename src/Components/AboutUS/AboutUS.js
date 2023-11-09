@@ -1,10 +1,10 @@
-import './OurC.sass';
+import './AboutUS.sass';
 import symka6 from '../../image/symka6.jpg'
 import symka4 from '../../image/symka4.jpg'
 
 
 
-export const OurC = () => {
+export const AboutUS = () => {
     return(
         <div>
             <div className="TextS">
