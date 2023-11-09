@@ -53,10 +53,10 @@ export const Contact = () => {
                 </div>
                 <form className="form" onSubmit={handleSubmit}>
                     <h2 className='form_h2'>CONTACT US</h2>
-                    <p className='form_p' type="Name:"><input className='form_input' placeholder="Write your name here.." name='username' onChange={handleChange} value={formData.username} /></p>
-                    <p className='form_p' type="Email:"><input className='form_input' placeholder="Let us know how to contact you back.." name='email' onChange={handleChange} value={formData.email} /></p>
-                    <p className='form_p' type="Subject:"><input className='form_input' placeholder="Write the subject line.." name='subject' onChange={handleChange} value={formData.subject} /></p>
-                    <p className='form_p' type="Message:"><input className='form_input' placeholder="What would you like to tell us.." name='message' onChange={handleChange} value={formData.message} /></p>
+                    <p className='p_form' type="Name:"><input className='inp_form' placeholder="Write your name here.." name='username' onChange={handleChange} value={formData.username} /></p>
+                    <p className='p_form' type="Email:"><input className='inp_form' placeholder="Let us know how to contact you back.." name='email' onChange={handleChange} value={formData.email} /></p>
+                    <p className='p_form' type="Subject:"><input className='inp_form' placeholder="Write the subject line.." name='subject' onChange={handleChange} value={formData.subject} /></p>
+                    <p className='p_form' type="Message:"><input className='inp_form' placeholder="What would you like to tell us.." name='message' onChange={handleChange} value={formData.message} /></p>
                     <button className='btn_form' type='submit'>Send Message</button>
                 </form>
             </div>
